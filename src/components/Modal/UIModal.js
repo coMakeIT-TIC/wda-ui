@@ -40,11 +40,14 @@ const UiDataModal = ({ isOpen, onClose, onSubmit, CurrentNode }) => {
       }));
     }
   };
+
   return (
     <Modal isOpen={isOpen} onClose={() => onClose(false)} isCentered={true}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>UI</ModalHeader>
+        <ModalHeader style={{ textAlign: "center" }}>
+          User Interface
+        </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <div
@@ -108,23 +111,6 @@ const UiDataModal = ({ isOpen, onClose, onSubmit, CurrentNode }) => {
                 value={UiData.serverPort}
                 onChange={(e) => handleData("serverPort", e.target.value)}
               />
-            </FormControl>
-            <FormControl>
-              <FormLabel>Want to have an Example</FormLabel>
-              <Select
-                mb={4}
-                variant="outline"
-                id="withExample"
-                borderColor={"black"}
-                value={UiData.withExample}
-                onChange={(e) => handleData("withExample", e.target.value)}
-              >
-                <option value="" disabled>
-                  Select an option
-                </option>
-                <option value="true">Yes</option>
-                <option value="false">No</option>
-              </Select>
             </FormControl>
           </div>
           <Button

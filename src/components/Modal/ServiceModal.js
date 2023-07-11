@@ -29,6 +29,7 @@ const ServiceModal = ({
     packageName: "",
     serverPort: "",
     applicationType: "microservice",
+    color: "#000000",
     ...CurrentNode,
   };
   const [ApplicationData, setApplicationData] = useState(IntialState);
@@ -72,7 +73,7 @@ const ServiceModal = ({
     <Modal isOpen={isOpen} onClose={() => onClose(false)} isCentered={true}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Service</ModalHeader>
+        <ModalHeader style={{ textAlign: "center" }}>Service</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <div

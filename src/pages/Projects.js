@@ -1,5 +1,4 @@
 import { useHistory } from "react-router-dom";
-import useFetch from "../Hooks/useFetch";
 import {
   Table,
   Thead,

@@ -88,6 +88,12 @@ body,
 .dndflow .selectall {
   margin-top: 10px;
 }
+.react-flow__node.react-flow__node-ResizableNode{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (min-width: 768px) {
   .dndflow {
@@ -104,7 +110,6 @@ body,
   padding: 0 !important;
 }
 
-.react-flow__node-default.selectable.selected,
 .react-flow__node-default.selectable.selected,
 .react-flow__node-input.selectable:focus {
   box-shadow: none !important;
